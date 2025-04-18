@@ -9,7 +9,7 @@ function Player() {
      {/* first */}
         <div className='flex items-center gap-3'>
             <img className='w-12' src={track.image} alt="" />
-            <div>
+            <div className='hidden md:inline-block'>
                 <h4>{track.name}</h4>
                 <h4>{track.desc.slice(0,16)+"..."}</h4>
             </div>
@@ -34,7 +34,7 @@ function Player() {
 
         <div className='flex items-center gap-2'>
             <p>{time.currentTime.minute}:{time.currentTime.second}</p>
-            <div ref={seekBg}  className='w-[60vh] max-w-[500px] bg-gray-300 rounded-full cursor-pointer'>
+            <div ref={seekBg}  className='w-[20vh] md:w-[60vh] max-w-[500px] bg-gray-300 rounded-full cursor-pointer'>
             <hr ref={seekBar} className='bg-green-800 h-1 w-0 border-none rounded-full ' />
             </div>
             <p>{time.totalTime.minute}:{time.totalTime.second}</p>

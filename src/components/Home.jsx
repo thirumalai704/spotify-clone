@@ -7,8 +7,8 @@ import {PlayerContext} from '../context/PlayerContext.jsx'
 function Home() {
   const {audioRef,track} = useContext(PlayerContext)
   return (
-    <div className='h-screen  bg-black'>
-      <div className='flex h-[90%]'>
+    <div className=' h-screen  w-full bg-black'>
+      <div className='flex h-[90%] w-full'>
          <Sidebar/>
          <Display />
       </div>

@@ -2,11 +2,11 @@ import React from 'react'
 import {assets} from '../assets/assets'
 function Sidebar() {
   return (
-    <div className='w-[25%] text-white   h-full  p-2 flex flex-col gap-2 '>
+    <div className='w-[25%] text-white hidden  h-full  p-2 lg:flex flex-col gap-2 '>
        
      {/* home and search */}
 
-     <div className=' h-[15%] bg-[#111111] py-3 text-white flex gap-5 flex-col justify-around rounded '>
+     <div className=' h-[15%] bg-[#111111] py-3 text-white  flex gap-5 flex-col justify-around rounded '>
             <div className='flex items-center font-bold  cursor-pointer pl-8 gap-3 '>
             <img className='w-5' src={assets.home_icon} alt="home" />
             <h1>Home</h1>

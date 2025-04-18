@@ -13,11 +13,11 @@ function Navbar() {
            <img onClick={()=>nav(-1)} className='w-8 bg-black p-2 rounded-2xl cursor-pointer' src={assets.arrow_left} alt="" />
            <img onClick={()=>nav(1)} className='w-8 bg-black p-2 rounded-2xl cursor-pointer' src={assets.arrow_right} alt="" />
        </div>
-       <div className='flex items-center gap-4' >
-           <p className='bg-white cursor-pointer text-black rounded-full px-2'>Explore Premium</p>
-           <p className='cursor-pointer bg-black rounded-full px-2'>Install App</p>
+       <div className=' ml-2 flex items-center gap-4' >
+           <p className='bg-white text-[10px]  cursor-pointer text-black md:text-sm rounded-full px-2'>Explore Premium</p>
+           <p className='cursor-pointer hidden md:inline-flex bg-black rounded-full px-2'>Install App</p>
            
-           <div className='rounded-full px-2 aspect-square cursor-pointer   bg-amber-500'>
+           <div className='rounded-full  px-2 aspect-square cursor-pointer   bg-amber-500'>
            <p className='text-black '>T</p>
            </div>
 
